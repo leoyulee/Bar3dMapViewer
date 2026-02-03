@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAR Replay Viewer (3D)</title>
+    <!-- We no longer need PixiJS -->
+    <!-- Include Three.js from a CDN -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BAR Replay Viewer (3D)</h1>
+    <!-- The container for our 3D canvas -->
+    <div id="canvas-container"></div>
+    <!-- Controls are unchanged -->
+    <!-- UI Controls -->
+    <div id="controls">
+        <div class="control-group">
+            <label for="map-selector">Select Map:</label>
+            <select id="map-selector">
+                <option value="">Loading maps...</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="time-slider">Frame:</label>
+            <input type="range" id="time-slider" min="0" max="100" value="0">
+            <span id="time-display">Frame 0 / 0.00s</span>
+        </div>
+        <div class="control-group">
+            <button id="reset-btn">Reset</button>
+            <button id="play-pause-btn">Play</button>
+            <div class="info-display">
+                <label>Visible Units:</label>
+                <span id="sprite-count-display">0</span>
+            </div>
+        </div>
+                <!-- Dynamic Mutator Controls -->
+        <div id="mutator-section">
+            <div class="control-group mutator-header">
+                <h4>Terrain Mutators</h4>
+                <button id="add-above-btn">+ Add 'Above'</button>
+                <button id="add-below-btn">+ Add 'Below'</button>
+                <button id="reset-terrain-btn">Reset All</button>
+            </div>
+            <!-- This container will be populated by JavaScript -->
+            <div id="mutator-controls-container"></div>
+        </div>
+        <!-- Water Controls -->
+        <div id="water-section" class="control-group">
+             <h4>Water Level</h4>
+             <label for="water-toggle">Show Water:</label>
+             <input type="checkbox" id="water-toggle" checked>
+             
+             <label for="water-level-slider">Height:</label>
+             <input type="range" id="water-level-slider" min="0" max="1000" value="0" step="1">
+             <span id="water-level-display">0</span>
+        </div>
+
+        <div class="control-group">
+            <label for="team-filter">Team ID:</label>
+            <select id="team-filter">
+                <option value="all">All Teams</option>
+            </select>
+            <label for="unit-filter">Unit Name:</label>
+            <select id="unit-filter">
+                <option value="all">All Units</option>
+            </select>
+        </div>
+    </div>
+    <!-- Update the script tag to be a module -->
+    <script type="module" src="script3d.js"></script>
+</body>
+</html>

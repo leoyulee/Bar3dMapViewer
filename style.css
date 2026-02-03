@@ -1,0 +1,180 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#canvas-container {
+    margin: 0 auto;
+    border: 2px solid #61dafb;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    /* This ensures the container shrinks-to-fit the canvas inside it */
+    display: inline-block;
+    /* Helps prevent weird spacing issues */
+    line-height: 0;
+    width: 100%;
+    height: 70vh;
+    max-width: 1000px;
+}
+
+#controls {
+    padding: 15px;
+    background-color: #3a3f4b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.control-group:last-child {
+    margin-bottom: 0;
+}
+
+.control-group label { margin: 0 10px 0 20px; }
+.control-group:first-child label { margin-left: 0; }
+
+#time-slider { flex-grow: 1; }
+#time-display { min-width: 120px; text-align: right; font-family: monospace;}
+
+button, select {
+    padding: 5px 10px;
+    border: 1px solid #61dafb;
+    background-color: #282c34;
+    color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+button:hover { background-color: #4b515d; }
+
+/* ... (all previous CSS is the same) ... */
+
+/* NEW: Styling for the info display group */
+.info-display {
+    margin-left: auto; /* Pushes the counter to the right */
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#sprite-count-display {
+    font-weight: bold;
+    color: #61dafb; /* Use the accent color */
+    min-width: 40px; /* Give it some space */
+    text-align: left;
+}
+
+
+/* Make the new sliders fill the available space like the time slider */
+#mutator-controls #threshold-slider,
+#mutator-controls #factor-slider {
+    flex-grow: 1;
+}
+
+/* Style the value displays to match the time display */
+#mutator-controls #threshold-value,
+#mutator-controls #factor-value {
+    min-width: 50px; /* Give it some space */
+    text-align: right;
+    font-family: monospace;
+    color: #f0f0f0;
+}
+
+/* Add some space to the left of the reset button */
+#mutator-controls #reset-terrain-btn {
+    margin-left: 20px;
+}
+
+
+#mutator-section {
+    border-top: 1px solid #61dafb;
+    border-bottom: 1px solid #61dafb;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+
+.mutator-header {
+    margin-bottom: 15px;
+}
+.mutator-header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+.mutator-header button {
+    margin-left: 10px;
+}
+
+/* Styling for each dynamically added mutator row */
+.mutator-row {
+    padding: 8px;
+    border: 1px solid #4b515d;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.mutator-row label {
+    min-width: 90px; /* Align the sliders */
+}
+
+.mutator-row input[type="range"] {
+    flex-grow: 1;
+}
+
+.mutator-row .mutator-value {
+    min-width: 50px;
+    text-align: right;
+    font-family: monospace;
+}
+
+.remove-mutator-btn {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: white;
+    margin-left: 15px;
+    padding: 3px 8px;
+    font-weight: bold;
+}
+.remove-mutator-btn:hover {
+    background-color: #e60000;
+}
+
+
+#water-section {
+    border-top: 1px solid #61dafb;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+#water-section h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+#water-section #water-level-slider {
+    flex-grow: 1;
+}
+
+#water-section #water-level-display {
+    min-width: 50px;
+    text-align: right;
+    font-family: monospace;
+}
+
+/* Style the checkbox */
+#water-toggle {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}

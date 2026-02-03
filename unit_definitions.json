@@ -1,0 +1,1907 @@
+{
+  "armaak": {
+    "faction": "ARM",
+    "icon": "icons/bot_amph_t2_aa.png",
+    "name": "Archangel"
+  },
+  "armaap": {
+    "faction": "ARM",
+    "icon": "icons/factory_air_t2.png",
+    "name": "Advanced Aircraft Plant"
+  },
+  "armaas": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_aa_flak.png",
+    "name": "Dragonslayer"
+  },
+  "armaca": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_worker.png",
+    "name": "Advanced Construction Aircraft"
+  },
+  "armack": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_worker.png",
+    "name": "Advanced Construction Bot"
+  },
+  "armacsub": {
+    "faction": "ARM",
+    "icon": "icons/sub_t2_worker.png",
+    "name": "Advanced Construction Sub"
+  },
+  "armacv": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_worker.png",
+    "name": "Advanced Construction Vehicle"
+  },
+  "armadvsol": {
+    "faction": "ARM",
+    "icon": "icons/energy2_1.18.png",
+    "name": "Advanced Solar Collector"
+  },
+  "armafus": {
+    "faction": "ARM",
+    "icon": "icons/energy5_1.85.png",
+    "name": "Advanced Fusion Reactor"
+  },
+  "armageo": {
+    "faction": "ARM",
+    "icon": "icons/hazardous.png",
+    "name": "Advanced Geothermal Powerplant"
+  },
+  "armah": {
+    "faction": "ARM",
+    "icon": "icons/hover_aa.png",
+    "name": "Sweeper"
+  },
+  "armalab": {
+    "faction": "ARM",
+    "icon": "icons/factory_bot_t2.png",
+    "name": "Advanced Bot Lab"
+  },
+  "armamb": {
+    "faction": "ARM",
+    "icon": "icons/def_t2_arty.png",
+    "name": "Rattlesnake"
+  },
+  "armamd": {
+    "faction": "ARM",
+    "icon": "icons/antinuke.png",
+    "name": "Citadel"
+  },
+  "armamex": {
+    "faction": "ARM",
+    "icon": "icons/mex_t1_emp.png",
+    "name": "Twilight"
+  },
+  "armamph": {
+    "faction": "ARM",
+    "icon": "icons/amph_t2_aa.png",
+    "name": "Platypus"
+  },
+  "armamsub": {
+    "faction": "ARM",
+    "icon": "icons/factory_amph.png",
+    "name": "Amphibious Complex"
+  },
+  "armanac": {
+    "faction": "ARM",
+    "icon": "icons/hover_gun.png",
+    "name": "Crocodile"
+  },
+  "armanni": {
+    "faction": "ARM",
+    "icon": "icons/armanni.png",
+    "name": "Pulsar"
+  },
+  "armantiship": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_carrier.png",
+    "name": "Haven"
+  },
+  "armap": {
+    "faction": "ARM",
+    "icon": "icons/factory_air.png",
+    "name": "Aircraft Plant"
+  },
+  "armarad": {
+    "faction": "ARM",
+    "icon": "icons/radar_t2.png",
+    "name": "Advanced Radar Tower"
+  },
+  "armart": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_arty.png",
+    "name": "Shellshocker"
+  },
+  "armaser": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_jammer.png",
+    "name": "Smuggler"
+  },
+  "armason": {
+    "faction": "ARM",
+    "icon": "icons/radar_t2.png",
+    "name": "Advanced Sonar Station"
+  },
+  "armasp": {
+    "faction": "ARM",
+    "icon": "icons/armasp_2.4.png",
+    "name": "Air Repair Pad"
+  },
+  "armasy": {
+    "faction": "ARM",
+    "icon": "icons/factory_ship_t2.png",
+    "name": "Advanced Shipyard"
+  },
+  "armatl": {
+    "faction": "ARM",
+    "icon": "icons/defence_2_naval.png",
+    "name": "Moray"
+  },
+  "armatlas": {
+    "faction": "ARM",
+    "icon": "icons/air_trans.png",
+    "name": "Stork"
+  },
+  "armavp": {
+    "faction": "ARM",
+    "icon": "icons/factory_vehicle_t2.png",
+    "name": "Advanced Vehicle Plant"
+  },
+  "armawac": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_radar.png",
+    "name": "Oracle"
+  },
+  "armbanth": {
+    "faction": "ARM",
+    "icon": "icons/bantha.png",
+    "name": "Titan"
+  },
+  "armbats": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_battleship.png",
+    "name": "Dreadnought"
+  },
+  "armbeamer": {
+    "faction": "ARM",
+    "icon": "icons/def_beamer.png",
+    "name": "Beamer"
+  },
+  "armbeaver": {
+    "faction": "ARM",
+    "icon": "icons/amphib_worker.png",
+    "name": "Beaver"
+  },
+  "armblade": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_hover_missile.png",
+    "name": "Hornet"
+  },
+  "armbrawl": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_hover.png",
+    "name": "Roughneck"
+  },
+  "armbrtha": {
+    "faction": "ARM",
+    "icon": "icons/armbrtha.png",
+    "name": "Basilica"
+  },
+  "armbull": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_tank.png",
+    "name": "Bull"
+  },
+  "armca": {
+    "faction": "ARM",
+    "icon": "icons/air_worker.png",
+    "name": "Construction Aircraft"
+  },
+  "armch": {
+    "faction": "ARM",
+    "icon": "icons/hover_worker.png",
+    "name": "Construction Hovercraft"
+  },
+  "armcir": {
+    "faction": "ARM",
+    "icon": "icons/aa_t1_long.png",
+    "name": "Chainsaw"
+  },
+  "armck": {
+    "faction": "ARM",
+    "icon": "icons/bot_worker.png",
+    "name": "Construction Bot"
+  },
+  "armckfus": {
+    "faction": "ARM",
+    "icon": "icons/fusion.png",
+    "name": "Cloakable Fusion Reactor"
+  },
+  "armclaw": {
+    "faction": "ARM",
+    "icon": "icons/wall_0.4.png",
+    "name": "Dragon's Claw"
+  },
+  "armcom": {
+    "faction": "ARM",
+    "icon": "icons/armcom.png",
+    "name": "Armada Commander"
+  },
+  "armconsul": {
+    "faction": "ARM",
+    "icon": "icons/armconsul_1.35.png",
+    "name": "Consul"
+  },
+  "armcroc": {
+    "faction": "ARM",
+    "icon": "icons/armcroc.png",
+    "name": "Turtle"
+  },
+  "armcrus": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_cruiser_plasma.png",
+    "name": "Paladin"
+  },
+  "armcs": {
+    "faction": "ARM",
+    "icon": "icons/ship_worker.png",
+    "name": "Construction Ship"
+  },
+  "armcsa": {
+    "faction": "ARM",
+    "icon": "icons/air_worker_sea.png",
+    "name": "Construction Seaplane"
+  },
+  "armcv": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_worker.png",
+    "name": "Construction Vehicle"
+  },
+  "armdecade": {
+    "faction": "ARM",
+    "icon": "icons/ship_raid.png",
+    "name": "Dolphin"
+  },
+  "armdecom": {
+    "faction": "ARM",
+    "icon": "icons/armcom.png",
+    "name": "Commander"
+  },
+  "armdf": {
+    "faction": "ARM",
+    "icon": "icons/fusion.png",
+    "name": "Decoy Fusion Reactor"
+  },
+  "armdfly": {
+    "faction": "ARM",
+    "icon": "icons/air_trans.png",
+    "name": "Abductor"
+  },
+  "armdl": {
+    "faction": "ARM",
+    "icon": "icons/defence_1_naval.png",
+    "name": "Anemone"
+  },
+  "armdrag": {
+    "faction": "ARM",
+    "icon": "icons/wall_0.4.png",
+    "name": "Dragon's Teeth"
+  },
+  "armemp": {
+    "faction": "ARM",
+    "icon": "icons/emp.png",
+    "name": "Paralyzer"
+  },
+  "armepoch": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_flagship.png",
+    "name": "Epoch"
+  },
+  "armestor": {
+    "faction": "ARM",
+    "icon": "icons/energystorage.png",
+    "name": "Energy Storage"
+  },
+  "armeyes": {
+    "faction": "ARM",
+    "icon": "icons/eye.png",
+    "name": "Beholder"
+  },
+  "armfark": {
+    "faction": "ARM",
+    "icon": "icons/engineer_small.png",
+    "name": "Butler"
+  },
+  "armfasp": {
+    "faction": "ARM",
+    "icon": "icons/armasp_2.4.png",
+    "name": "Air Repair Pad"
+  },
+  "armfast": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_raid.png",
+    "name": "Sprinter"
+  },
+  "armfatf": {
+    "faction": "ARM",
+    "icon": "icons/targetting.png",
+    "name": "Naval Pinpointer"
+  },
+  "armfav": {
+    "faction": "ARM",
+    "icon": "icons/vehicle.png",
+    "name": "Rover"
+  },
+  "armfboy": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_plasma_aoe.png",
+    "name": "Fatboy"
+  },
+  "armfdrag": {
+    "faction": "ARM",
+    "icon": "icons/wall_0.4.png",
+    "name": "Shark's Teeth"
+  },
+  "armferret": {
+    "faction": "ARM",
+    "icon": "icons/aa_t15.png",
+    "name": "Ferret"
+  },
+  "armfflak": {
+    "faction": "ARM",
+    "icon": "icons/aa_flak_t2.png",
+    "name": "Naval Arbalest"
+  },
+  "armfhlt": {
+    "faction": "ARM",
+    "icon": "icons/defence_1_laser.png",
+    "name": "Manta"
+  },
+  "armfhp": {
+    "faction": "ARM",
+    "icon": "icons/factory_hover.png",
+    "name": "Naval Hovercraft Platform"
+  },
+  "armfido": {
+    "faction": "ARM",
+    "icon": "icons/bot_arty_t2.png",
+    "name": "Hound"
+  },
+  "armfig": {
+    "faction": "ARM",
+    "icon": "icons/air.png",
+    "name": "Falcon"
+  },
+  "armflak": {
+    "faction": "ARM",
+    "icon": "icons/aa_flak_t2.png",
+    "name": "Arbalest"
+  },
+  "armflash": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t1_raid.png",
+    "name": "Blitz"
+  },
+  "armflea": {
+    "faction": "ARM",
+    "icon": "icons/bot_t1_flea.png",
+    "name": "Tick"
+  },
+  "armfmine3": {
+    "faction": "ARM",
+    "icon": "icons/mine.png",
+    "name": "Heavy Mine"
+  },
+  "armfmkr": {
+    "faction": "ARM",
+    "icon": "icons/metalmaker_t1.png",
+    "name": "Naval Energy Converter"
+  },
+  "armfort": {
+    "faction": "ARM",
+    "icon": "icons/wall_0.4.png",
+    "name": "Fortification Wall"
+  },
+  "armfrad": {
+    "faction": "ARM",
+    "icon": "icons/radar_t1.png",
+    "name": "Naval Radar / Sonar Tower"
+  },
+  "armfrt": {
+    "faction": "ARM",
+    "icon": "icons/aa.png",
+    "name": "Naval Nettle"
+  },
+  "armfus": {
+    "faction": "ARM",
+    "icon": "icons/fusion.png",
+    "name": "Fusion Reactor"
+  },
+  "armgate": {
+    "faction": "ARM",
+    "icon": "icons/shield.png",
+    "name": "Keeper"
+  },
+  "armgeo": {
+    "faction": "ARM",
+    "icon": "icons/energy6_1.3.png",
+    "name": "Geothermal Powerplant"
+  },
+  "armgmm": {
+    "faction": "ARM",
+    "icon": "icons/energy_geo_safe.png",
+    "name": "Prude"
+  },
+  "armgremlin": {
+    "faction": "ARM",
+    "icon": "icons/armst_1.25.png",
+    "name": "Gremlin"
+  },
+  "armguard": {
+    "faction": "ARM",
+    "icon": "icons/def_t1_arty.png",
+    "name": "Gauntlet"
+  },
+  "armham": {
+    "faction": "ARM",
+    "icon": "icons/bot_plasma_t1.png",
+    "name": "Mace"
+  },
+  "armhawk": {
+    "faction": "ARM",
+    "icon": "icons/air_t2.png",
+    "name": "Highwind"
+  },
+  "armhlt": {
+    "faction": "ARM",
+    "icon": "icons/defence_1.5_laser.png",
+    "name": "Overwatch"
+  },
+  "armhp": {
+    "faction": "ARM",
+    "icon": "icons/factory_hover.png",
+    "name": "Hovercraft Platform"
+  },
+  "armhvytrans": {
+    "faction": "ARM",
+    "icon": "icons/air_trans.png",
+    "name": "Osprey"
+  },
+  "armjam": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_jammer.png",
+    "name": "Umbra"
+  },
+  "armjamt": {
+    "faction": "ARM",
+    "icon": "icons/jammer.png",
+    "name": "Sneaky Pete"
+  },
+  "armjanus": {
+    "faction": "ARM",
+    "icon": "icons/armjanus_1.2.png",
+    "name": "Janus"
+  },
+  "armjeth": {
+    "faction": "ARM",
+    "icon": "icons/bot_amph_aa.png",
+    "name": "Crossbow"
+  },
+  "armjuno": {
+    "faction": "ARM",
+    "icon": "icons/juno.png",
+    "name": "Juno"
+  },
+  "armkam": {
+    "faction": "ARM",
+    "icon": "icons/air_hover.png",
+    "name": "Banshee"
+  },
+  "armkraken": {
+    "faction": "ARM",
+    "icon": "icons/def_t2_cannon.png",
+    "name": "Gorgon"
+  },
+  "armlab": {
+    "faction": "ARM",
+    "icon": "icons/factory_bot.png",
+    "name": "Bot Lab"
+  },
+  "armlance": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_torpbomber.png",
+    "name": "Cormorant"
+  },
+  "armlatnk": {
+    "faction": "ARM",
+    "icon": "icons/armlatnk_1.3.png",
+    "name": "Jaguar"
+  },
+  "armliche": {
+    "faction": "ARM",
+    "icon": "icons/air_liche.png",
+    "name": "Liche"
+  },
+  "armllt": {
+    "faction": "ARM",
+    "icon": "icons/defence_0_laser.png",
+    "name": "Sentry"
+  },
+  "armlship": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_lightning.png",
+    "name": "Maelstrom"
+  },
+  "armlun": {
+    "faction": "ARM",
+    "icon": "icons/armlun_1.8.png",
+    "name": "Lunkhead"
+  },
+  "armmakr": {
+    "faction": "ARM",
+    "icon": "icons/metalmaker_t1.png",
+    "name": "Energy Converter"
+  },
+  "armmanni": {
+    "faction": "ARM",
+    "icon": "icons/armmanni_1.55.png",
+    "name": "Starlight"
+  },
+  "armmar": {
+    "faction": "ARM",
+    "icon": "icons/armmar_t3.png",
+    "name": "Marauder"
+  },
+  "armmark": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_radar.png",
+    "name": "Compass"
+  },
+  "armmart": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_arty_t2.png",
+    "name": "Mauser"
+  },
+  "armmav": {
+    "faction": "ARM",
+    "icon": "icons/bot_t2_impulse2x.png",
+    "name": "Gunslinger"
+  },
+  "armmercury": {
+    "faction": "ARM",
+    "icon": "icons/aa_longrange_t2.png",
+    "name": "Mercury"
+  },
+  "armmerl": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_vroc.png",
+    "name": "Ambassador"
+  },
+  "armmex": {
+    "faction": "ARM",
+    "icon": "icons/mex_t1.png",
+    "name": "Metal Extractor"
+  },
+  "armmh": {
+    "faction": "ARM",
+    "icon": "icons/hover_t1_missile.png",
+    "name": "Possum"
+  },
+  "armmine1": {
+    "faction": "ARM",
+    "icon": "icons/mine.png",
+    "name": "Light Mine"
+  },
+  "armmine2": {
+    "faction": "ARM",
+    "icon": "icons/mine.png",
+    "name": "Medium Mine"
+  },
+  "armmine3": {
+    "faction": "ARM",
+    "icon": "icons/mine.png",
+    "name": "Heavy Mine"
+  },
+  "armmls": {
+    "faction": "ARM",
+    "icon": "icons/shipengineer.png",
+    "name": "Voyager"
+  },
+  "armmlv": {
+    "faction": "ARM",
+    "icon": "icons/armmlv_1.0.png",
+    "name": "Groundhog"
+  },
+  "armmmkr": {
+    "faction": "ARM",
+    "icon": "icons/metalmaker_t2.png",
+    "name": "Advanced Energy Converter"
+  },
+  "armmoho": {
+    "faction": "ARM",
+    "icon": "icons/mex_t2.png",
+    "name": "Advanced Metal Extractor"
+  },
+  "armmship": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_missile.png",
+    "name": "Longbow"
+  },
+  "armmstor": {
+    "faction": "ARM",
+    "icon": "icons/metalstorage.png",
+    "name": "Metal Storage"
+  },
+  "armnanotc": {
+    "faction": "ARM",
+    "icon": "icons/nanot1.png",
+    "name": "Construction Turret"
+  },
+  "armnanotcplat": {
+    "faction": "ARM",
+    "icon": "icons/nanot1.png",
+    "name": "Naval Construction Turret"
+  },
+  "armpb": {
+    "faction": "ARM",
+    "icon": "icons/def_t2_impulse.png",
+    "name": "Pit Bull"
+  },
+  "armpeep": {
+    "faction": "ARM",
+    "icon": "icons/air_los.png",
+    "name": "Blink"
+  },
+  "armpincer": {
+    "faction": "ARM",
+    "icon": "icons/amphib_tank.png",
+    "name": "Pincer"
+  },
+  "armplat": {
+    "faction": "ARM",
+    "icon": "icons/factory_air_sea.png",
+    "name": "Seaplane Platform"
+  },
+  "armpnix": {
+    "faction": "ARM",
+    "icon": "icons/air_t2_bomber.png",
+    "name": "Blizzard"
+  },
+  "armpship": {
+    "faction": "ARM",
+    "icon": "icons/ship_pship.png",
+    "name": "Ellysaw"
+  },
+  "armpt": {
+    "faction": "ARM",
+    "icon": "icons/ship.png",
+    "name": "Skater"
+  },
+  "armpw": {
+    "faction": "ARM",
+    "icon": "icons/bot_t1_raid_0.7.png",
+    "name": "Pawn"
+  },
+  "armrad": {
+    "faction": "ARM",
+    "icon": "icons/radar_t1.png",
+    "name": "Radar Tower"
+  },
+  "armraz": {
+    "faction": "ARM",
+    "icon": "icons/armraz_1.75.png",
+    "name": "Razorback"
+  },
+  "armrecl": {
+    "faction": "ARM",
+    "icon": "icons/sub_rez.png",
+    "name": "Grim Reaper"
+  },
+  "armrectr": {
+    "faction": "ARM",
+    "icon": "icons/bot_t1_rez.png",
+    "name": "Lazarus"
+  },
+  "armrl": {
+    "faction": "ARM",
+    "icon": "icons/aa.png",
+    "name": "Nettle"
+  },
+  "armrock": {
+    "faction": "ARM",
+    "icon": "icons/bot_rocket.png",
+    "name": "Rocketeer"
+  },
+  "armroy": {
+    "faction": "ARM",
+    "icon": "icons/ship_destroyer.png",
+    "name": "Corsair"
+  },
+  "armsaber": {
+    "faction": "ARM",
+    "icon": "icons/air_t1_hover_sea.png",
+    "name": "Sabre"
+  },
+  "armsam": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t1_missile.png",
+    "name": "Whistler"
+  },
+  "armsb": {
+    "faction": "ARM",
+    "icon": "icons/air_bomber_sea.png",
+    "name": "Tsunami"
+  },
+  "armscab": {
+    "faction": "ARM",
+    "icon": "icons/antinukemobile.png",
+    "name": "Umbrella"
+  },
+  "armsd": {
+    "faction": "ARM",
+    "icon": "icons/seismic.png",
+    "name": "Tracer"
+  },
+  "armseap": {
+    "faction": "ARM",
+    "icon": "icons/air_torp_sea.png",
+    "name": "Puffin"
+  },
+  "armseer": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_radar.png",
+    "name": "Prophet"
+  },
+  "armsehak": {
+    "faction": "ARM",
+    "icon": "icons/air_los_sea.png",
+    "name": "Horizon"
+  },
+  "armserp": {
+    "faction": "ARM",
+    "icon": "icons/battlesub_t2.png",
+    "name": "Serpent"
+  },
+  "armsfig": {
+    "faction": "ARM",
+    "icon": "icons/air_sea.png",
+    "name": "Cyclone"
+  },
+  "armsh": {
+    "faction": "ARM",
+    "icon": "icons/hover_raid.png",
+    "name": "Seeker"
+  },
+  "armshltx": {
+    "faction": "ARM",
+    "icon": "icons/factory_gantry.png",
+    "name": "Experimental Gantry"
+  },
+  "armshltxuw": {
+    "faction": "ARM",
+    "icon": "icons/factory_gantry_uw.png",
+    "name": "Experimental Gantry"
+  },
+  "armsilo": {
+    "faction": "ARM",
+    "icon": "icons/nuke.png",
+    "name": "Armageddon"
+  },
+  "armsjam": {
+    "faction": "ARM",
+    "icon": "icons/ship_t2_jammer.png",
+    "name": "Bermuda"
+  },
+  "armsnipe": {
+    "faction": "ARM",
+    "icon": "icons/armsnipe_1.3.png",
+    "name": "Sharpshooter"
+  },
+  "armsolar": {
+    "faction": "ARM",
+    "icon": "icons/energy1_1.0.png",
+    "name": "Solar Collector"
+  },
+  "armspid": {
+    "faction": "ARM",
+    "icon": "icons/allterrain_emp.png",
+    "name": "Webber"
+  },
+  "armsptk": {
+    "faction": "ARM",
+    "icon": "icons/armsptk_1.44.png",
+    "name": "Recluse"
+  },
+  "armspy": {
+    "faction": "ARM",
+    "icon": "icons/spy.png",
+    "name": "Ghost"
+  },
+  "armstil": {
+    "faction": "ARM",
+    "icon": "icons/armstil_1.66.png",
+    "name": "Stiletto"
+  },
+  "armstump": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t1_tank.png",
+    "name": "Stout"
+  },
+  "armsub": {
+    "faction": "ARM",
+    "icon": "icons/sub.png",
+    "name": "Eel"
+  },
+  "armsubk": {
+    "faction": "ARM",
+    "icon": "icons/sub_t2.png",
+    "name": "Barracuda"
+  },
+  "armsy": {
+    "faction": "ARM",
+    "icon": "icons/factory_ship.png",
+    "name": "Shipyard"
+  },
+  "armtarg": {
+    "faction": "ARM",
+    "icon": "icons/targetting.png",
+    "name": "Pinpointer"
+  },
+  "armthor": {
+    "faction": "ARM",
+    "icon": "icons/armthor.png",
+    "name": "Thor"
+  },
+  "armthund": {
+    "faction": "ARM",
+    "icon": "icons/air_bomber.png",
+    "name": "Stormbringer"
+  },
+  "armtide": {
+    "faction": "ARM",
+    "icon": "icons/energy1_1.0.png",
+    "name": "Tidal Generator"
+  },
+  "armtl": {
+    "faction": "ARM",
+    "icon": "icons/defence_1_naval.png",
+    "name": "Harpoon"
+  },
+  "armuwadves": {
+    "faction": "ARM",
+    "icon": "icons/energystorage_t2.png",
+    "name": "Hardened Energy Storage"
+  },
+  "armuwadvms": {
+    "faction": "ARM",
+    "icon": "icons/metalstorage_t2.png",
+    "name": "Hardened Metal Storage"
+  },
+  "armuwageo": {
+    "faction": "ARM",
+    "icon": "icons/hazardous.png",
+    "name": "Advanced Geothermal Powerplant"
+  },
+  "armuwes": {
+    "faction": "ARM",
+    "icon": "icons/energystorage.png",
+    "name": "Naval Energy Storage"
+  },
+  "armuwfus": {
+    "faction": "ARM",
+    "icon": "icons/fusion.png",
+    "name": "Naval Fusion Reactor"
+  },
+  "armuwgeo": {
+    "faction": "ARM",
+    "icon": "icons/energy6_1.3.png",
+    "name": "Geothermal Powerplant"
+  },
+  "armuwmme": {
+    "faction": "ARM",
+    "icon": "icons/mex_t2.png",
+    "name": "Naval Advanced Metal Extractor"
+  },
+  "armuwmmm": {
+    "faction": "ARM",
+    "icon": "icons/metalmaker_t2.png",
+    "name": "Naval Advanced Energy Converter"
+  },
+  "armuwms": {
+    "faction": "ARM",
+    "icon": "icons/metalstorage.png",
+    "name": "Naval Metal Storage"
+  },
+  "armvader": {
+    "faction": "ARM",
+    "icon": "icons/armvader_0.9.png",
+    "name": "Tumbleweed"
+  },
+  "armvang": {
+    "faction": "ARM",
+    "icon": "icons/allterrain_t3_arty.png",
+    "name": "Vanguard"
+  },
+  "armveil": {
+    "faction": "ARM",
+    "icon": "icons/jammer_t2.png",
+    "name": "Veil"
+  },
+  "armvp": {
+    "faction": "ARM",
+    "icon": "icons/factory_vehicle.png",
+    "name": "Vehicle Plant"
+  },
+  "armvulc": {
+    "faction": "ARM",
+    "icon": "icons/armvulc.png",
+    "name": "Ragnarok"
+  },
+  "armwar": {
+    "faction": "ARM",
+    "icon": "icons/armwar_1.15.png",
+    "name": "Centurion"
+  },
+  "armwin": {
+    "faction": "ARM",
+    "icon": "icons/wind.png",
+    "name": "Wind Turbine"
+  },
+  "armyork": {
+    "faction": "ARM",
+    "icon": "icons/vehicle_t2_aa_flak.png",
+    "name": "Shredder"
+  },
+  "armzeus": {
+    "faction": "ARM",
+    "icon": "icons/armzeus_1.28.png",
+    "name": "Welder"
+  },
+  "coraak": {
+    "faction": "CORE",
+    "icon": "icons/bot_amph_t2_aa.png",
+    "name": "Manticore"
+  },
+  "coraap": {
+    "faction": "CORE",
+    "icon": "icons/factory_air_t2.png",
+    "name": "Advanced Aircraft Plant"
+  },
+  "coraca": {
+    "faction": "CORE",
+    "icon": "icons/air_t2_worker.png",
+    "name": "Advanced Construction Aircraft"
+  },
+  "corack": {
+    "faction": "CORE",
+    "icon": "icons/bot_t2_worker.png",
+    "name": "Advanced Construction Bot"
+  },
+  "coracsub": {
+    "faction": "CORE",
+    "icon": "icons/sub_t2_worker.png",
+    "name": "Advanced Construction Sub"
+  },
+  "coracv": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_worker.png",
+    "name": "Advanced Construction Vehicle"
+  },
+  "coradvsol": {
+    "faction": "CORE",
+    "icon": "icons/energy2_1.18.png",
+    "name": "Advanced Solar Collector"
+  },
+  "corafus": {
+    "faction": "CORE",
+    "icon": "icons/energy5_1.85.png",
+    "name": "Advanced Fusion Reactor"
+  },
+  "corageo": {
+    "faction": "CORE",
+    "icon": "icons/hazardous.png",
+    "name": "Advanced Geothermal Powerplant"
+  },
+  "corah": {
+    "faction": "CORE",
+    "icon": "icons/hover_aa.png",
+    "name": "Birdeater"
+  },
+  "corak": {
+    "faction": "CORE",
+    "icon": "icons/bot_t1_raid_0.7.png",
+    "name": "Grunt"
+  },
+  "coralab": {
+    "faction": "CORE",
+    "icon": "icons/factory_bot_t2.png",
+    "name": "Advanced Bot Lab"
+  },
+  "coramph": {
+    "faction": "CORE",
+    "icon": "icons/amph_torp.png",
+    "name": "Duck"
+  },
+  "coramsub": {
+    "faction": "CORE",
+    "icon": "icons/factory_amph.png",
+    "name": "Amphibious Complex"
+  },
+  "corantiship": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_carrier.png",
+    "name": "Oasis"
+  },
+  "corap": {
+    "faction": "CORE",
+    "icon": "icons/factory_air.png",
+    "name": "Aircraft Plant"
+  },
+  "corape": {
+    "faction": "CORE",
+    "icon": "icons/air_t2_hover_missile.png",
+    "name": "Wasp"
+  },
+  "corarad": {
+    "faction": "CORE",
+    "icon": "icons/radar_t2.png",
+    "name": "Advanced Radar Tower"
+  },
+  "corarch": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_aa_flak.png",
+    "name": "Arrow Storm"
+  },
+  "corason": {
+    "faction": "CORE",
+    "icon": "icons/radar_t2.png",
+    "name": "Advanced Sonar Station"
+  },
+  "corasp": {
+    "faction": "CORE",
+    "icon": "icons/corasp_2.4.png",
+    "name": "Air Repair Pad"
+  },
+  "corasy": {
+    "faction": "CORE",
+    "icon": "icons/factory_ship_t2.png",
+    "name": "Advanced Shipyard"
+  },
+  "coratl": {
+    "faction": "CORE",
+    "icon": "icons/defence_2_naval.png",
+    "name": "Lamprey"
+  },
+  "coravp": {
+    "faction": "CORE",
+    "icon": "icons/factory_vehicle_t2.png",
+    "name": "Advanced Vehicle Plant"
+  },
+  "corawac": {
+    "faction": "CORE",
+    "icon": "icons/air_t2_radar.png",
+    "name": "Condor"
+  },
+  "corban": {
+    "faction": "CORE",
+    "icon": "icons/corban_1.6.png",
+    "name": "Banisher"
+  },
+  "corbats": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_battleship.png",
+    "name": "Despot"
+  },
+  "corbhmth": {
+    "faction": "CORE",
+    "icon": "icons/corbhmth.png",
+    "name": "Cerberus"
+  },
+  "corblackhy": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_flagship.png",
+    "name": "Black Hydra"
+  },
+  "corbuzz": {
+    "faction": "CORE",
+    "icon": "icons/corbuzz.png",
+    "name": "Calamity"
+  },
+  "corbw": {
+    "faction": "CORE",
+    "icon": "icons/air_bladew.png",
+    "name": "Shuriken"
+  },
+  "corca": {
+    "faction": "CORE",
+    "icon": "icons/air_worker.png",
+    "name": "Construction Aircraft"
+  },
+  "corcan": {
+    "faction": "CORE",
+    "icon": "icons/corcan.png",
+    "name": "Sumo"
+  },
+  "corcat": {
+    "faction": "CORE",
+    "icon": "icons/corcat_1.9.png",
+    "name": "Catapult"
+  },
+  "corch": {
+    "faction": "CORE",
+    "icon": "icons/hover_worker.png",
+    "name": "Construction Hovercraft"
+  },
+  "corck": {
+    "faction": "CORE",
+    "icon": "icons/bot_worker.png",
+    "name": "Construction Bot"
+  },
+  "corcom": {
+    "faction": "CORE",
+    "icon": "icons/corcom.png",
+    "name": "Cortex Commander"
+  },
+  "corcrash": {
+    "faction": "CORE",
+    "icon": "icons/bot_amph_aa.png",
+    "name": "Trasher"
+  },
+  "corcrus": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_cruiser.png",
+    "name": "Buccaneer"
+  },
+  "corcrwh": {
+    "faction": "CORE",
+    "icon": "icons/air_krow.png",
+    "name": "Dragon"
+  },
+  "corcs": {
+    "faction": "CORE",
+    "icon": "icons/ship_worker.png",
+    "name": "Construction Ship"
+  },
+  "corcsa": {
+    "faction": "CORE",
+    "icon": "icons/air_worker_sea.png",
+    "name": "Construction Seaplane"
+  },
+  "corcut": {
+    "faction": "CORE",
+    "icon": "icons/air_t1_hover_sea_cannon.png",
+    "name": "Cutlass"
+  },
+  "corcv": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_worker.png",
+    "name": "Construction Vehicle"
+  },
+  "cordecom": {
+    "faction": "CORE",
+    "icon": "icons/corcom.png",
+    "name": "Commander"
+  },
+  "cordemon": {
+    "faction": "CORE",
+    "icon": "icons/cordemon.png",
+    "name": "Demon"
+  },
+  "cordl": {
+    "faction": "CORE",
+    "icon": "icons/defence_1_naval.png",
+    "name": "Jellyfish"
+  },
+  "cordoom": {
+    "faction": "CORE",
+    "icon": "icons/cordoom.png",
+    "name": "Bulwark"
+  },
+  "cordrag": {
+    "faction": "CORE",
+    "icon": "icons/wall_0.4.png",
+    "name": "Dragon's Teeth"
+  },
+  "corenaa": {
+    "faction": "CORE",
+    "icon": "icons/aa_flak_t2.png",
+    "name": "Naval Birdshot"
+  },
+  "corerad": {
+    "faction": "CORE",
+    "icon": "icons/aa_t1_long.png",
+    "name": "Eradicator"
+  },
+  "corestor": {
+    "faction": "CORE",
+    "icon": "icons/energystorage.png",
+    "name": "Energy Storage"
+  },
+  "coresupp": {
+    "faction": "CORE",
+    "icon": "icons/ship_raid.png",
+    "name": "Supporter"
+  },
+  "coreter": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_jammer.png",
+    "name": "Obscurer"
+  },
+  "corexp": {
+    "faction": "CORE",
+    "icon": "icons/mex_t1_laser.png",
+    "name": "Exploiter"
+  },
+  "coreyes": {
+    "faction": "CORE",
+    "icon": "icons/eye.png",
+    "name": "Beholder"
+  },
+  "corfasp": {
+    "faction": "CORE",
+    "icon": "icons/corasp_2.4.png",
+    "name": "Air Repair Pad"
+  },
+  "corfast": {
+    "faction": "CORE",
+    "icon": "icons/corfast_1.3.png",
+    "name": "Twitcher"
+  },
+  "corfatf": {
+    "faction": "CORE",
+    "icon": "icons/targetting.png",
+    "name": "Naval Pinpointer"
+  },
+  "corfav": {
+    "faction": "CORE",
+    "icon": "icons/vehicle.png",
+    "name": "Rascal"
+  },
+  "corfdoom": {
+    "faction": "CORE",
+    "icon": "icons/cordoom.png",
+    "name": "Devastator"
+  },
+  "corfdrag": {
+    "faction": "CORE",
+    "icon": "icons/wall_0.4.png",
+    "name": "Shark's Teeth"
+  },
+  "corfhlt": {
+    "faction": "CORE",
+    "icon": "icons/defence_1_laser.png",
+    "name": "Coral"
+  },
+  "corfhp": {
+    "faction": "CORE",
+    "icon": "icons/factory_hover.png",
+    "name": "Naval Hovercraft Platform"
+  },
+  "corfink": {
+    "faction": "CORE",
+    "icon": "icons/air_los.png",
+    "name": "Finch"
+  },
+  "corflak": {
+    "faction": "CORE",
+    "icon": "icons/aa_flak_t2.png",
+    "name": "Birdshot"
+  },
+  "corfmd": {
+    "faction": "CORE",
+    "icon": "icons/antinuke.png",
+    "name": "Prevailer"
+  },
+  "corfmine3": {
+    "faction": "CORE",
+    "icon": "icons/mine.png",
+    "name": "Heavy Mine"
+  },
+  "corfmkr": {
+    "faction": "CORE",
+    "icon": "icons/metalmaker_t1.png",
+    "name": "Naval Energy Converter"
+  },
+  "corfort": {
+    "faction": "CORE",
+    "icon": "icons/wall_0.4.png",
+    "name": "Fortification Wall"
+  },
+  "corfrad": {
+    "faction": "CORE",
+    "icon": "icons/radar_t1.png",
+    "name": "Naval Radar / Sonar Tower"
+  },
+  "corfrt": {
+    "faction": "CORE",
+    "icon": "icons/aa.png",
+    "name": "Slingshot"
+  },
+  "corfship": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_flame.png",
+    "name": "Brimstone"
+  },
+  "corfus": {
+    "faction": "CORE",
+    "icon": "icons/fusion.png",
+    "name": "Fusion Reactor"
+  },
+  "corgant": {
+    "faction": "CORE",
+    "icon": "icons/factory_gantry.png",
+    "name": "Experimental Gantry"
+  },
+  "corgantuw": {
+    "faction": "CORE",
+    "icon": "icons/factory_gantry_uw.png",
+    "name": "Experimental Gantry"
+  },
+  "corgarp": {
+    "faction": "CORE",
+    "icon": "icons/amphib_tank.png",
+    "name": "Garpike"
+  },
+  "corgate": {
+    "faction": "CORE",
+    "icon": "icons/shield.png",
+    "name": "Overseer"
+  },
+  "corgator": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t1_raid.png",
+    "name": "Incisor"
+  },
+  "corgeo": {
+    "faction": "CORE",
+    "icon": "icons/energy6_1.3.png",
+    "name": "Geothermal Powerplant"
+  },
+  "corgol": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_plasma_aoe.png",
+    "name": "Tzar"
+  },
+  "corhal": {
+    "faction": "CORE",
+    "icon": "icons/corhal.png",
+    "name": "Halberd"
+  },
+  "corhllt": {
+    "faction": "CORE",
+    "icon": "icons/defence_hllt.png",
+    "name": "Twin Guard"
+  },
+  "corhlt": {
+    "faction": "CORE",
+    "icon": "icons/defence_1.5_laser.png",
+    "name": "Warden"
+  },
+  "corhp": {
+    "faction": "CORE",
+    "icon": "icons/factory_hover.png",
+    "name": "Hovercraft Platform"
+  },
+  "corhrk": {
+    "faction": "CORE",
+    "icon": "icons/bot_t2_vroc.png",
+    "name": "Arbiter"
+  },
+  "corhunt": {
+    "faction": "CORE",
+    "icon": "icons/air_los_sea.png",
+    "name": "Watcher"
+  },
+  "corhurc": {
+    "faction": "CORE",
+    "icon": "icons/air_t2_bomber.png",
+    "name": "Hailstorm"
+  },
+  "corhvytrans": {
+    "faction": "CORE",
+    "icon": "icons/air_trans.png",
+    "name": "Hephaestus"
+  },
+  "corint": {
+    "faction": "CORE",
+    "icon": "icons/corint.png",
+    "name": "Basilisk"
+  },
+  "corjamt": {
+    "faction": "CORE",
+    "icon": "icons/jammer.png",
+    "name": "Castro"
+  },
+  "corjugg": {
+    "faction": "CORE",
+    "icon": "icons/juggernaut.png",
+    "name": "Behemoth"
+  },
+  "corjuno": {
+    "faction": "CORE",
+    "icon": "icons/juno.png",
+    "name": "Juno"
+  },
+  "corkarg": {
+    "faction": "CORE",
+    "icon": "icons/corkarg_2.05.png",
+    "name": "Karganeth"
+  },
+  "corkorg": {
+    "faction": "CORE",
+    "icon": "icons/mech.png",
+    "name": "Juggernaut"
+  },
+  "corlab": {
+    "faction": "CORE",
+    "icon": "icons/factory_bot.png",
+    "name": "Bot Lab"
+  },
+  "corlevlr": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t1_impulse.png",
+    "name": "Pounder"
+  },
+  "corllt": {
+    "faction": "CORE",
+    "icon": "icons/defence_0_laser.png",
+    "name": "Guard"
+  },
+  "cormabm": {
+    "faction": "CORE",
+    "icon": "icons/antinukevehicle.png",
+    "name": "Saviour"
+  },
+  "cormadsam": {
+    "faction": "CORE",
+    "icon": "icons/aa_t15.png",
+    "name": "SAM"
+  },
+  "cormakr": {
+    "faction": "CORE",
+    "icon": "icons/metalmaker_t1.png",
+    "name": "Energy Converter"
+  },
+  "cormando": {
+    "faction": "CORE",
+    "icon": "icons/cormando.png",
+    "name": "Commando"
+  },
+  "cormart": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_arty_t2.png",
+    "name": "Quaker"
+  },
+  "cormaw": {
+    "faction": "CORE",
+    "icon": "icons/wall_0.4.png",
+    "name": "Dragon's Maw"
+  },
+  "cormex": {
+    "faction": "CORE",
+    "icon": "icons/mex_t1.png",
+    "name": "Metal Extractor"
+  },
+  "cormexp": {
+    "faction": "CORE",
+    "icon": "icons/mex_t2.png",
+    "name": "Advanced Exploiter"
+  },
+  "cormh": {
+    "faction": "CORE",
+    "icon": "icons/hover_t1_missile.png",
+    "name": "Mangonel"
+  },
+  "cormine1": {
+    "faction": "CORE",
+    "icon": "icons/mine.png",
+    "name": "Light Mine"
+  },
+  "cormine2": {
+    "faction": "CORE",
+    "icon": "icons/mine.png",
+    "name": "Medium Mine"
+  },
+  "cormine3": {
+    "faction": "CORE",
+    "icon": "icons/mine.png",
+    "name": "Heavy Mine"
+  },
+  "cormist": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t1_missile.png",
+    "name": "Lasher"
+  },
+  "cormls": {
+    "faction": "CORE",
+    "icon": "icons/shipengineer.png",
+    "name": "Pathfinder"
+  },
+  "cormlv": {
+    "faction": "CORE",
+    "icon": "icons/cormlv_1.0.png",
+    "name": "Trapper"
+  },
+  "cormmkr": {
+    "faction": "CORE",
+    "icon": "icons/metalmaker_t2.png",
+    "name": "Advanced Energy Converter"
+  },
+  "cormoho": {
+    "faction": "CORE",
+    "icon": "icons/mex_t2.png",
+    "name": "Advanced Metal Extractor"
+  },
+  "cormort": {
+    "faction": "CORE",
+    "icon": "icons/bot_arty_t2.png",
+    "name": "Sheldon"
+  },
+  "cormship": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_missile.png",
+    "name": "Messenger"
+  },
+  "cormstor": {
+    "faction": "CORE",
+    "icon": "icons/metalstorage.png",
+    "name": "Metal Storage"
+  },
+  "cormuskrat": {
+    "faction": "CORE",
+    "icon": "icons/amphib_worker.png",
+    "name": "Muskrat"
+  },
+  "cornanotc": {
+    "faction": "CORE",
+    "icon": "icons/nanot1.png",
+    "name": "Construction Turret"
+  },
+  "cornanotcplat": {
+    "faction": "CORE",
+    "icon": "icons/nanot1.png",
+    "name": "Naval Construction Turret"
+  },
+  "cornecro": {
+    "faction": "CORE",
+    "icon": "icons/bot_t1_rez.png",
+    "name": "Graverobber"
+  },
+  "corparrow": {
+    "faction": "CORE",
+    "icon": "icons/corparrow.png",
+    "name": "Poison Arrow"
+  },
+  "corplat": {
+    "faction": "CORE",
+    "icon": "icons/factory_air_sea.png",
+    "name": "Seaplane Platform"
+  },
+  "corpship": {
+    "faction": "CORE",
+    "icon": "icons/ship_pship.png",
+    "name": "Riptide"
+  },
+  "corpt": {
+    "faction": "CORE",
+    "icon": "icons/ship.png",
+    "name": "Herring"
+  },
+  "corpun": {
+    "faction": "CORE",
+    "icon": "icons/def_t1_arty.png",
+    "name": "Agitator"
+  },
+  "corpyro": {
+    "faction": "CORE",
+    "icon": "icons/corpyro_1.15.png",
+    "name": "Fiend"
+  },
+  "corrad": {
+    "faction": "CORE",
+    "icon": "icons/radar_t1.png",
+    "name": "Radar Tower"
+  },
+  "corraid": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t1_tank.png",
+    "name": "Brute"
+  },
+  "correap": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_tank.png",
+    "name": "Tiger"
+  },
+  "correcl": {
+    "faction": "CORE",
+    "icon": "icons/sub_rez.png",
+    "name": "Death Cavalry"
+  },
+  "corrl": {
+    "faction": "CORE",
+    "icon": "icons/aa.png",
+    "name": "Thistle"
+  },
+  "corroach": {
+    "faction": "CORE",
+    "icon": "icons/corroach_0.9.png",
+    "name": "Bedbug"
+  },
+  "corroy": {
+    "faction": "CORE",
+    "icon": "icons/ship_destroyer.png",
+    "name": "Oppressor"
+  },
+  "corsala": {
+    "faction": "CORE",
+    "icon": "icons/corseal.png",
+    "name": "Salamander"
+  },
+  "corsb": {
+    "faction": "CORE",
+    "icon": "icons/air_bomber_sea.png",
+    "name": "Dam Buster"
+  },
+  "corscreamer": {
+    "faction": "CORE",
+    "icon": "icons/aa_longrange_t2.png",
+    "name": "Screamer"
+  },
+  "corsd": {
+    "faction": "CORE",
+    "icon": "icons/seismic.png",
+    "name": "Nemesis"
+  },
+  "corseah": {
+    "faction": "CORE",
+    "icon": "icons/air_trans.png",
+    "name": "Skyhook"
+  },
+  "corseap": {
+    "faction": "CORE",
+    "icon": "icons/air_torp_sea.png",
+    "name": "Monsoon"
+  },
+  "corsent": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_aa_flak.png",
+    "name": "Fury"
+  },
+  "corsfig": {
+    "faction": "CORE",
+    "icon": "icons/air_sea.png",
+    "name": "Bat"
+  },
+  "corsh": {
+    "faction": "CORE",
+    "icon": "icons/hover_raid.png",
+    "name": "Goon"
+  },
+  "corshad": {
+    "faction": "CORE",
+    "icon": "icons/air_bomber.png",
+    "name": "Whirlwind"
+  },
+  "corshark": {
+    "faction": "CORE",
+    "icon": "icons/sub_t2.png",
+    "name": "Predator"
+  },
+  "corshiva": {
+    "faction": "CORE",
+    "icon": "icons/corshiva_2.1.png",
+    "name": "Shiva"
+  },
+  "corshroud": {
+    "faction": "CORE",
+    "icon": "icons/jammer_t2.png",
+    "name": "Shroud"
+  },
+  "corsilo": {
+    "faction": "CORE",
+    "icon": "icons/nuke.png",
+    "name": "Apocalypse"
+  },
+  "corsjam": {
+    "faction": "CORE",
+    "icon": "icons/ship_t2_jammer.png",
+    "name": "Phantasm"
+  },
+  "corsktl": {
+    "faction": "CORE",
+    "icon": "icons/corsktl.png",
+    "name": "Skuttle"
+  },
+  "corsnap": {
+    "faction": "CORE",
+    "icon": "icons/hover_gun.png",
+    "name": "Cayman"
+  },
+  "corsok": {
+    "faction": "CORE",
+    "icon": "icons/corsok_1.8.png",
+    "name": "Cataphract"
+  },
+  "corsolar": {
+    "faction": "CORE",
+    "icon": "icons/energy1_1.0.png",
+    "name": "Solar Collector"
+  },
+  "corspec": {
+    "faction": "CORE",
+    "icon": "icons/bot_t2_jammer.png",
+    "name": "Deceiver"
+  },
+  "corspy": {
+    "faction": "CORE",
+    "icon": "icons/spy.png",
+    "name": "Spectre"
+  },
+  "corssub": {
+    "faction": "CORE",
+    "icon": "icons/battlesub_t2.png",
+    "name": "Kraken"
+  },
+  "corstorm": {
+    "faction": "CORE",
+    "icon": "icons/bot_rocket.png",
+    "name": "Aggravator"
+  },
+  "corsub": {
+    "faction": "CORE",
+    "icon": "icons/sub.png",
+    "name": "Orca"
+  },
+  "corsumo": {
+    "faction": "CORE",
+    "icon": "icons/corsumo.png",
+    "name": "Mammoth"
+  },
+  "corsy": {
+    "faction": "CORE",
+    "icon": "icons/factory_ship.png",
+    "name": "Shipyard"
+  },
+  "cortarg": {
+    "faction": "CORE",
+    "icon": "icons/targetting.png",
+    "name": "Pinpointer"
+  },
+  "cortermite": {
+    "faction": "CORE",
+    "icon": "icons/cortermite_1.5.png",
+    "name": "Termite"
+  },
+  "corthud": {
+    "faction": "CORE",
+    "icon": "icons/bot_plasma_t1.png",
+    "name": "Thug"
+  },
+  "cortide": {
+    "faction": "CORE",
+    "icon": "icons/energy1_1.0.png",
+    "name": "Tidal Generator"
+  },
+  "cortitan": {
+    "faction": "CORE",
+    "icon": "icons/air_t2_torpbomber.png",
+    "name": "Angler"
+  },
+  "cortl": {
+    "faction": "CORE",
+    "icon": "icons/defence_1_naval.png",
+    "name": "Urchin"
+  },
+  "cortoast": {
+    "faction": "CORE",
+    "icon": "icons/def_t2_arty.png",
+    "name": "Persecutor"
+  },
+  "cortrem": {
+    "faction": "CORE",
+    "icon": "icons/cortrem_t2.png",
+    "name": "Tremor"
+  },
+  "cortron": {
+    "faction": "CORE",
+    "icon": "icons/tacnuke.png",
+    "name": "Catalyst"
+  },
+  "coruwadves": {
+    "faction": "CORE",
+    "icon": "icons/energystorage_t2.png",
+    "name": "Hardened Energy Storage"
+  },
+  "coruwadvms": {
+    "faction": "CORE",
+    "icon": "icons/metalstorage_t2.png",
+    "name": "Hardened Metal Storage"
+  },
+  "coruwageo": {
+    "faction": "CORE",
+    "icon": "icons/hazardous.png",
+    "name": "Advanced Geothermal Powerplant"
+  },
+  "coruwes": {
+    "faction": "CORE",
+    "icon": "icons/energystorage.png",
+    "name": "Naval Energy Storage"
+  },
+  "coruwfus": {
+    "faction": "CORE",
+    "icon": "icons/fusion.png",
+    "name": "Naval Fusion Reactor"
+  },
+  "coruwgeo": {
+    "faction": "CORE",
+    "icon": "icons/energy6_1.3.png",
+    "name": "Geothermal Powerplant"
+  },
+  "coruwmme": {
+    "faction": "CORE",
+    "icon": "icons/mex_t2.png",
+    "name": "Naval Advanced Metal Extractor"
+  },
+  "coruwmmm": {
+    "faction": "CORE",
+    "icon": "icons/metalmaker_t2.png",
+    "name": "Naval Advanced Energy Converter"
+  },
+  "coruwms": {
+    "faction": "CORE",
+    "icon": "icons/metalstorage.png",
+    "name": "Naval Metal Storage"
+  },
+  "corvalk": {
+    "faction": "CORE",
+    "icon": "icons/air_trans.png",
+    "name": "Hercules"
+  },
+  "corvamp": {
+    "faction": "CORE",
+    "icon": "icons/air_t2.png",
+    "name": "Nighthawk"
+  },
+  "corveng": {
+    "faction": "CORE",
+    "icon": "icons/air.png",
+    "name": "Valiant"
+  },
+  "corvipe": {
+    "faction": "CORE",
+    "icon": "icons/def_t2_missile.png",
+    "name": "Scorpion"
+  },
+  "corvoyr": {
+    "faction": "CORE",
+    "icon": "icons/bot_t2_radar.png",
+    "name": "Augur"
+  },
+  "corvp": {
+    "faction": "CORE",
+    "icon": "icons/factory_vehicle.png",
+    "name": "Vehicle Plant"
+  },
+  "corvrad": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_radar.png",
+    "name": "Omen"
+  },
+  "corvroc": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_t2_vroc.png",
+    "name": "Negotiator"
+  },
+  "corwin": {
+    "faction": "CORE",
+    "icon": "icons/wind.png",
+    "name": "Wind Turbine"
+  },
+  "corwolv": {
+    "faction": "CORE",
+    "icon": "icons/vehicle_arty.png",
+    "name": "Wolverine"
+  }
+}
