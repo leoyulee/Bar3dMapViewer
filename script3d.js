@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- APP STATE & THREE.JS SETUP ---
     let scene, camera, renderer, orbitControls;
     let imageWidth, imageHeight;
+    let mapData;
     let mapMetadata = {}, unitDefinitions = {}, unitTimelines = {}, unitSprites = {};
     let minFrame = Infinity, maxFrame = -Infinity, currentFrame = 0, isPlaying = false;
     let mapWidthWorld, mapHeightWorld;
@@ -60,31 +61,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
             mapSelector.innerHTML = ''; // Clear "Loading..." message
             
-            //Mark maps as "isLive" for easier data management
+            //Mark maps as "isInactive" for easier data management
             jsonData.forEach(map => {
-                const isLive = !(liveData.find(
+                const isInactive = !(liveData.find(
                     tarMap => {
                         return (tarMap.springName).localeCompare(map.scriptName) == 0;
                     }
-                ))
-                map.isLive = isLive
+                ));
+                map.isInactive = isInactive
             });
             
             // Sort maps alphabetically by their descriptive name
-            const sortedMaps = jsonData.sort((a, b) => {
-                if (a.isLive != b.isLive) return a.isLive && 1 || -1
+            mapData = jsonData.sort((a, b) => {
+                if (a.isInactive != b.isInactive) return a.isInactive && 1 || -1;
                 const nameA = a.scriptName || a.fileName;
                 const nameB = b.scriptName || b.fileName;
                 return nameA.localeCompare(nameB);
             });
 
             //Add maps to dropdown
-            sortedMaps.forEach(map => {
+            mapData.forEach(map => {
                 const option = document.createElement('option');
                 option.value = map.fileName;
                 // Use the more descriptive 'scriptName' as the text, falling back to 'fileName'
                 // Also tag them as [INACTIVE]
-                option.textContent = (map.isLive && "[INACTIVE] " || "") + (map.scriptName || map.fileName); 
+                option.textContent = (map.isInactive && "[INACTIVE] " || "") + (map.scriptName || map.fileName);
+                option.hidden = map.isInactive;
                 mapSelector.appendChild(option);
             });
 
@@ -121,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             console.log("Step 4: Initializing UI...");
             initializeUI();
+            initializeMapControls();
             initializeMutatorControls();
             initializeWaterControls();
 
@@ -502,6 +505,25 @@ document.addEventListener('DOMContentLoaded', () => {
         displacementTexture.needsUpdate = true;
     }
 
+    function initializeMapControls() {
+        const mapToggle = document.getElementById('all-map-toggle');
+
+        // Toggle map visibility
+        mapToggle.addEventListener('change', () => {
+            const showAll = mapToggle.checked;
+
+            const allOptions = Array.from(mapSelector.options);
+            allOptions.forEach((option) => {
+                const isInactive = option.text.includes("[INACTIVE] "); //crappy way to see if inactive because i can't be asked to refer to the map data we got from earlier
+                if (showAll) {
+                    option.hidden = false;
+                }
+                else {
+                    option.hidden = isInactive;
+                }
+            });
+        });
+    }
 
     /**
      * Initializes the dynamic mutator UI and its event listeners.

@@ -42,9 +42,16 @@ h1 {
 .control-group:last-child {
     margin-bottom: 0;
 }
-
+.control-group h4 {
+    margin: 0;
+    font-weight: 600;
+}
+.control-group input{
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
 .control-group label { margin: 0 10px 0 20px; }
-.control-group:first-child label { margin-left: 0; }
 
 #time-slider { flex-grow: 1; }
 #time-display { min-width: 120px; text-align: right; font-family: monospace;}
@@ -109,10 +116,6 @@ button:hover { background-color: #4b515d; }
 .mutator-header {
     margin-bottom: 15px;
 }
-.mutator-header h4 {
-    margin: 0;
-    font-weight: 600;
-}
 .mutator-header button {
     margin-left: 10px;
 }
@@ -157,11 +160,6 @@ button:hover { background-color: #4b515d; }
     margin-top: 15px;
 }
 
-#water-section h4 {
-    margin: 0;
-    font-weight: 600;
-}
-
 #water-section #water-level-slider {
     flex-grow: 1;
 }
@@ -172,9 +170,3 @@ button:hover { background-color: #4b515d; }
     font-family: monospace;
 }
 
-/* Style the checkbox */
-#water-toggle {
-    width: 18px;
-    height: 18px;
-    margin-right: 20px;
-}
