@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', () => {
         waterSlider.min = MIN_MAP_HEIGHT - 200; // Allow going below original min
         waterSlider.max = MAX_MAP_HEIGHT + 500; // Allow going well above original max
         waterSlider.value = 0; // Set initial value
-        waterDisplay.textContent = waterSlider.value;
+        waterDisplay.value = waterSlider.value;
 
         // Toggle water visibility
         waterToggle.addEventListener('change', () => {
@@ -640,8 +640,14 @@ document.addEventListener('DOMContentLoaded', () => {
         waterSlider.addEventListener('input', () => {
             const newHeight = parseFloat(waterSlider.value);
             waterPlane.position.y = newHeight;
-            waterDisplay.textContent = newHeight.toFixed(0);
+            waterDisplay.value = newHeight.toFixed(0);
         });
+
+        waterDisplay.addEventListener('input', () => {
+            const newHeight = parseFloat(waterDisplay.value || 0);
+            waterPlane.position.y = newHeight;
+            waterSlider.value = newHeight.toFixed(0);
+        })
     }
 
     // --- 3D OBJECTS & COORDINATE MAPPING ---
