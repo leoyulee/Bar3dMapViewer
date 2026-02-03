@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // const MAP_API_URL = 'https://api.bar-rts.com/maps/all_that_glitters_v2.2.3';
     let MAP_API_URL = `https://api.bar-rts.com/maps/${currentMapFileName}`;
-    const UNIT_DEFS_URL = 'unit_definitions.json';
-    const REPLAY_DATA_URL = 'unit_positions.csv';
+    //const UNIT_DEFS_URL = 'unit_definitions.json';
+    //const REPLAY_DATA_URL = 'unit_positions.csv';
     const FPS = 30;
     let WATER_LEVEL = 0; // <<< NEW: Define the map's water level
     const TEAM_COLORS = {
@@ -27,13 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DOM ELEMENTS ---
     const canvasContainer = document.getElementById('canvas-container');
     const controlsDiv = document.getElementById('controls');
-    const timeSlider = document.getElementById('time-slider');
-    const timeDisplay = document.getElementById('time-display');
-    const playPauseBtn = document.getElementById('play-pause-btn');
-    const resetBtn = document.getElementById('reset-btn');
-    const teamFilter = document.getElementById('team-filter');
-    const unitFilter = document.getElementById('unit-filter');
-    const spriteCountDisplay = document.getElementById('sprite-count-display');
     const mapSelector = document.getElementById('map-selector');
 
     // --- APP STATE & THREE.JS SETUP ---
@@ -115,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             console.log("Step 1: Loading metadata...");
             await loadMapMetadata();
-            await loadUnitDefinitions();
 
             console.log("Step 2: Initializing 3D Scene...");
             initThreeJsScene();
@@ -124,25 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
             await createTerrain();
             createWaterPlane(); // <<< NEW: Call this after creating the terrain
 
-            console.log("Step 4: Loading icons and replay data...");
-            // The loadUnitIcons function is a placeholder for logical flow;
-            // actual loading happens in createUnitSprites.
-            await loadUnitIcons();
-            await loadReplayData();
+            //console.log("Step 4: Loading icons and replay data...");
+            //await loadReplayData();
 
-            console.log("Step 5: Creating 3D unit sprites...");
-            createUnitSprites();
-
-            console.log("Step 6: Initializing UI...");
+            console.log("Step 4: Initializing UI...");
             initializeUI();
             initializeMutatorControls();
             initializeWaterControls();
 
             // addTestBoxes();
-
-            console.log("Step 7: Drawing the initial frame...");
-            // FIX #3: Draw the first frame to show initial unit positions.
-            updateFrame(currentFrame);
 
             console.log("Setup complete. Starting animation loop.");
             startAnimationLoop();
@@ -164,54 +146,44 @@ document.addEventListener('DOMContentLoaded', () => {
         mapHeightWorld = mapMetadata.height * 512;
     }
 
-    async function loadUnitDefinitions() {
-        const response = await fetch(UNIT_DEFS_URL);
-        if (!response.ok) throw new Error(`Could not fetch ${UNIT_DEFS_URL}`);
-        unitDefinitions = await response.json();
-    }
+    // async function loadReplayData() {
+    //     const response = await fetch(REPLAY_DATA_URL);
+    //     if (!response.ok) throw new Error(`Could not fetch ${REPLAY_DATA_URL}`);
+    //     const csvData = await response.text();
+    //     const rows = csvData.trim().split('\n');
+    //     const headers = rows.shift().trim().split(',');
+    //     const col = headers.reduce((acc, val, i) => ({ ...acc, [val]: i }), {});
 
-    async function loadReplayData() {
-        const response = await fetch(REPLAY_DATA_URL);
-        if (!response.ok) throw new Error(`Could not fetch ${REPLAY_DATA_URL}`);
-        const csvData = await response.text();
-        const rows = csvData.trim().split('\n');
-        const headers = rows.shift().trim().split(',');
-        const col = headers.reduce((acc, val, i) => ({ ...acc, [val]: i }), {});
+    //     // Make sure the 'y' column exists
+    //     if (!('y' in col)) {
+    //         throw new Error("CSV file is missing the required 'y' column for height data.");
+    //     }
 
-        // Make sure the 'y' column exists
-        if (!('y' in col)) {
-            throw new Error("CSV file is missing the required 'y' column for height data.");
-        }
+    //     rows.forEach(row => {
+    //         const values = row.trim().split(',');
+    //         if (values.length < headers.length) return;
+    //         const unit_id = values[col.unit_id];
+    //         const uDefName = values[col.uDefName];
+    //         if (!unitDefinitions[uDefName]) return;
 
-        rows.forEach(row => {
-            const values = row.trim().split(',');
-            if (values.length < headers.length) return;
-            const unit_id = values[col.unit_id];
-            const uDefName = values[col.uDefName];
-            if (!unitDefinitions[uDefName]) return;
+    //         if (!unitTimelines[unit_id]) {
+    //             unitTimelines[unit_id] = { data: [], uDefName, team_id: values[col.team_id] };
+    //         }
+    //         const frame = parseInt(values[col.frame], 10);
+    //         unitTimelines[unit_id].data.push({
+    //             frame,
+    //             x: parseFloat(values[col.x]),
+    //             y: parseFloat(values[col.y]) - 100,
+    //             z: parseFloat(values[col.z])
+    //         });
+    //         minFrame = Math.min(minFrame, frame);
+    //         maxFrame = Math.max(maxFrame, frame);
+    //     });
 
-            if (!unitTimelines[unit_id]) {
-                unitTimelines[unit_id] = { data: [], uDefName, team_id: values[col.team_id] };
-            }
-            const frame = parseInt(values[col.frame], 10);
-            unitTimelines[unit_id].data.push({
-                frame,
-                x: parseFloat(values[col.x]),
-                y: parseFloat(values[col.y]) - 100,
-                z: parseFloat(values[col.z])
-            });
-            minFrame = Math.min(minFrame, frame);
-            maxFrame = Math.max(maxFrame, frame);
-        });
-
-        for (const unitId in unitTimelines) {
-            unitTimelines[unitId].data.sort((a, b) => a.frame - b.frame);
-        }
-    }
-
-    async function loadUnitIcons() {
-        return Promise.resolve();
-    }
+    //     for (const unitId in unitTimelines) {
+    //         unitTimelines[unitId].data.sort((a, b) => a.frame - b.frame);
+    //     }
+    // }
 
     // --- 3D SCENE SETUP ---
     function initThreeJsScene() {
@@ -651,24 +623,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- 3D OBJECTS & COORDINATE MAPPING ---
-    function createUnitSprites() {
-        const loader = new THREE.TextureLoader();
-        for (const unitId in unitTimelines) {
-            const unitInfo = unitTimelines[unitId];
-            const def = unitDefinitions[unitInfo.uDefName];
-
-            if (def && def.icon) {
-                const texture = loader.load(def.icon);
-                const material = new THREE.SpriteMaterial({ map: texture });
-                const sprite = new THREE.Sprite(material);
-                sprite.scale.set(60, 60, 1);
-                sprite.visible = false;
-                unitSprites[unitId] = sprite;
-                scene.add(sprite);
-            }
-        }
-    }
-
     function getHeightAt(x, z) {
         if (!heightDataContext) return 0;
         const u = x / mapWidthWorld;
@@ -708,48 +662,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAnimationLoop() {
         function animate() {
             requestAnimationFrame(animate);
-            // FIX #2: Animation logic is now inside the main animation loop
-            if (isPlaying && currentFrame < maxFrame) {
-                currentFrame++;
-                updateFrame(currentFrame, false); // Pass false to not update slider from animation
-            }
             orbitControls.update();
             renderer.render(scene, camera);
         }
         animate();
-    }
-
-    // updateSlider parameter prevents feedback loop
-    function updateFrame(frame, updateSlider = true) {
-        currentFrame = frame;
-        if (updateSlider) {
-            timeSlider.value = frame;
-        }
-        timeDisplay.textContent = `Frame ${frame} / ${(frame / FPS).toFixed(2)}s`;
-        const selectedTeam = teamFilter.value;
-        const selectedUnit = unitFilter.value;
-        let visibleSpriteCount = 0;
-
-        for (const unitId in unitSprites) {
-            const sprite = unitSprites[unitId];
-            const unitInfo = unitTimelines[unitId];
-            const isVisible = (selectedTeam === 'all' || unitInfo.team_id === selectedTeam) &&
-                (selectedUnit === 'all' || unitInfo.uDefName === selectedUnit) &&
-                (frame >= unitInfo.data[0].frame);
-
-            sprite.visible = false;
-            if (isVisible) {
-                const pos = getInterpolatedPosition(unitId, frame);
-                if (pos) {
-                    sprite.position.copy(worldTo3dPosition(pos.x, pos.y, pos.z));
-                    // Tint the sprite material's color
-                    sprite.material.color.setHex(TEAM_COLORS[unitInfo.team_id] || TEAM_COLORS.default);
-                    sprite.visible = true;
-                    visibleSpriteCount++;
-                }
-            }
-        }
-        spriteCountDisplay.textContent = visibleSpriteCount;
     }
 
     function addTestBoxes() {
@@ -775,43 +691,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- UI CONTROLS ---
     function initializeUI() {
-        const sortedUnitDefs = Object.keys(unitDefinitions).sort((a, b) =>
-            unitDefinitions[a].name.localeCompare(unitDefinitions[b].name)
-        );
-        sortedUnitDefs.forEach(uDefName => {
-            const friendlyName = unitDefinitions[uDefName].name || uDefName;
-            unitFilter.add(new Option(friendlyName, uDefName));
-        });
-
-        const allTeamIds = new Set(Object.values(unitTimelines).map(t => t.team_id));
-        const sortedTeams = Array.from(allTeamIds).sort((a, b) => a - b);
-        sortedTeams.forEach(id => teamFilter.add(new Option(`Team ${id}`, id)));
-
-        timeSlider.min = minFrame;
-        timeSlider.max = maxFrame;
-        timeSlider.value = minFrame;
         currentFrame = minFrame;
-
-        playPauseBtn.addEventListener('click', togglePlayPause);
-        resetBtn.addEventListener('click', resetAnimation);
-        timeSlider.addEventListener('input', () => updateFrame(parseInt(timeSlider.value, 10), false));
-        teamFilter.addEventListener('change', () => updateFrame(currentFrame));
-        unitFilter.addEventListener('change', () => updateFrame(currentFrame));
-    }
-
-    function playAnimation() {
-        if (currentFrame >= maxFrame) currentFrame = minFrame;
-        isPlaying = true;
-        playPauseBtn.textContent = 'Pause';
-    }
-    function pauseAnimation() {
-        isPlaying = false;
-        playPauseBtn.textContent = 'Play';
-    }
-    function togglePlayPause() { isPlaying ? pauseAnimation() : playAnimation(); }
-    function resetAnimation() {
-        pauseAnimation();
-        updateFrame(minFrame);
     }
 
     // --- START ---
