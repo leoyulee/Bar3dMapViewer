@@ -545,10 +545,10 @@ document.addEventListener('DOMContentLoaded', () => {
             div.innerHTML = `
                 <label>${typeLabel}:</label>
                 <input type="range" class="threshold-slider" min="${MIN_MAP_HEIGHT}" max="${MAX_MAP_HEIGHT}" value="${mutator.threshold}" step="1">
-                <span class="mutator-value threshold-value">${mutator.threshold}</span>
+                <input class="mutator-value threshold-value" min="${MIN_MAP_HEIGHT}" max="${MAX_MAP_HEIGHT}" value="${mutator.threshold}" step="1" placeholder="${mutator.threshold}">
                 <label>Factor:</label>
                 <input type="range" class="factor-slider" min="-10.0" max="10.0" value="${mutator.factor}" step="0.01">
-                <span class="mutator-value factor-value">${mutator.factor.toFixed(2)}</span>
+                <input class="mutator-value factor-value" min="-10.0" max="10.0" value="${mutator.factor.toFixed(2)}" step="0.01" placeholder="${mutator.factor.toFixed(2)}">
                 <button class="remove-mutator-btn">X</button>
             `;
             return div;
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Use event delegation to handle all input changes and removals
         container.addEventListener('input', (event) => {
             const target = event.target;
-            if (target.matches('.threshold-slider, .factor-slider')) {
+            if (target.matches('.threshold-slider, .factor-slider, .threshold-value, .factor-value')) {
                 const row = target.closest('.mutator-row');
                 const id = parseInt(row.dataset.id);
                 const mutator = mutatorChain.find(m => m.id === id);
@@ -591,12 +591,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     const thresholdSlider = row.querySelector('.threshold-slider');
                     const factorSlider = row.querySelector('.factor-slider');
 
-                    mutator.threshold = parseFloat(thresholdSlider.value);
-                    mutator.factor = parseFloat(factorSlider.value);
+                    const thresholdValue = row.querySelector('.threshold-value')
+                    const factorValue = row.querySelector('.factor-value')
 
-                    // Update UI text
-                    row.querySelector('.threshold-value').textContent = mutator.threshold.toFixed(0);
-                    row.querySelector('.factor-value').textContent = mutator.factor.toFixed(2);
+                    if (target.matches('.threshold-slider, .factor-slider')) {
+                        //Slider event
+                        mutator.threshold = parseFloat(thresholdSlider.value);
+                        mutator.factor = parseFloat(factorSlider.value);
+                        // Update UI text
+                        thresholdValue.value = mutator.threshold.toFixed(0);
+                        factorValue.value = mutator.factor.toFixed(2);
+                    } else {
+                        //Number event
+                        mutator.threshold = parseFloat(thresholdValue.value || thresholdValue.placeholder);
+                        mutator.factor = parseFloat(factorValue.value || factorValue.placeholder);
+                        // Update Slider Positions
+                        thresholdSlider.value = mutator.threshold;
+                        factorSlider.value = mutator.factor;
+                    }
+                    
 
                     applyMutatorChain();
                 }
