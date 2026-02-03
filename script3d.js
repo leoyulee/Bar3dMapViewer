@@ -53,24 +53,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadAndPopulateMaps() {
         try {
-            const response = await fetch('https://api.bar-rts.com/maps?limit=1000');
-            if (!response.ok) throw new Error('Failed to fetch map list');
-            const mapData = await response.json();
+            //Get live maps so we can label them as such
+             const live_map_response = await fetch('https://maps-metadata.beyondallreason.dev/latest/teiserver_maps.validated.json'); //source: https://discord.com/channels/549281623154229250/564591092360675328/1408537067960533168
+            if (!live_map_response.ok) throw new Error('Failed to fetch map list');
+            const liveMapData = await live_map_response.json();
+            const liveData = liveMapData.maps //Array of active map data
+            
+            //Get all map data for the sake of transparency
+            const all_map_response = await fetch('https://api.bar-rts.com/maps?limit=1000');
+            if (!all_map_response.ok) throw new Error('Failed to fetch map list');
+            const allMapData = await all_map_response.json();
+            const jsonData = allMapData.data //Array of all map data
 
             mapSelector.innerHTML = ''; // Clear "Loading..." message
-
+            
+            //Mark maps as "isLive" for easier data management
+            jsonData.forEach(map => {
+                const isLive = !(liveData.find(
+                    tarMap => {
+                        return (tarMap.springName).localeCompare(map.scriptName) == 0;
+                    }
+                ))
+                map.isLive = isLive
+            });
+            
             // Sort maps alphabetically by their descriptive name
-            const sortedMaps = mapData.data.sort((a, b) => {
+            const sortedMaps = jsonData.sort((a, b) => {
+                if (a.isLive != b.isLive) return a.isLive && 1 || -1
                 const nameA = a.scriptName || a.fileName;
                 const nameB = b.scriptName || b.fileName;
                 return nameA.localeCompare(nameB);
             });
 
+            //Add maps to dropdown
             sortedMaps.forEach(map => {
                 const option = document.createElement('option');
                 option.value = map.fileName;
                 // Use the more descriptive 'scriptName' as the text, falling back to 'fileName'
-                option.textContent = map.scriptName || map.fileName; 
+                // Also tag them as [INACTIVE]
+                option.textContent = (map.isLive && "[INACTIVE] " || "") + (map.scriptName || map.fileName); 
                 mapSelector.appendChild(option);
             });
 
